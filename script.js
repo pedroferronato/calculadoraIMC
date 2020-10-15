@@ -15,11 +15,12 @@ function limparFormulario(){
 
 document.querySelector('#btnCalcularIMC').addEventListener('click', (event) => {
     event.preventDefault()
-    document.getElementById("magreza").classList.remove("combinaResultado")
-    document.getElementById("normal").classList.remove("combinaResultado")
-    document.getElementById("sobrepeso").classList.remove("combinaResultado")
-    document.getElementById("obesidade").classList.remove("combinaResultado")
-    document.getElementById("obesidadeGrave").classList.remove("combinaResultado")
+    let linhas = ["magreza", "normal", "sobrepeso", "obesidade", "obesidadeGrave"]
+
+    linhas.forEach(element => {
+        document.getElementById(element).classList.remove("combinaResultado")
+    });
+    
     let imc = parseFloat(calcularIMC(peso.value, altura.value).toFixed(2))
     resultado.innerHTML = '<h3 class="txtResultado">Seu IMC é: ' + imc.toString() + '<h3>'
     let tabela = document.querySelector("table")
