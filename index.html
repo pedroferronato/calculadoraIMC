@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+  <header class="cabecalho">
+    <h1 class="cabTitulo ">Cálculo de IMC</h1>
+  </header>
+  <main  class="container">
+    <form class="formulario">
+      <div>
+        <label class="label" for="peso">Peso: (Ex: 65.5)</label>
+        <input type="number" id="peso" class="campoTxt">
+      </div>
+      <div>
+        <label class="label"for="altura">Altura: (Ex: 1.65)</label>
+        <input type="number" id="altura" class="campoTxt">
+      </div>
+      <input type="submit" value="Calcular" class="btn" id="btnCalcularIMC">
+    </form>
+    <div class="resultado"></div>
+    <table class="invisivel">
+      <tr>
+        <th>IMC</th>
+        <th>Classificação</th>
+        <th>Obesidade (grau)</th>
+      </tr>
+      <tr id="magreza">
+        <td>Menor que 18,5</td>
+        <td>Magreza</td>
+        <td>0</td>
+      </tr>
+      <tr id="normal">
+        <td>Entre 18,5 e 24,9</td>
+        <td>Normal</td>
+        <td>0</td>
+      </tr>
+      <tr id="sobrepeso">
+        <td>Entre 25,0 e 29,9</td>
+        <td>Sobrepeso</td>
+        <td>I</td>
+      </tr>
+      <tr id="obesidade">
+        <td>Entre 30,0 e 39,9</td>
+        <td>Obesidade</td>
+        <td>II</td>
+      </tr>
+      <tr id="obesidadeGrave">
+        <td>Maior que 40,0</td>
+        <td>Obesidade grave</td>
+        <td>III</td>
+      </tr>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

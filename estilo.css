@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.cabecalho {
+    background-color: rgb(28, 156, 150);
+}
+
+.cabTitulo {
+    text-indent: 0;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 20px 0 20px 0;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.formulario {
+    margin: 30px 10px 10px 10px;
+}
+
+.label {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.campoTxt {
+    text-indent: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(28, 156, 150);
+    height: 50px;
+}
+
+.campoTxt:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(12, 116, 110);
+    background-color: rgba(243, 243, 243, 0.5);
+    height: 50px;
+    outline: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(28, 156, 150);
+    color: white;
+    font-size: 20px;
+}
+
+.txtResultado {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+table {
+    margin: 30px 0 0 0;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px;
+    border: 2px solid  rgb(28, 156, 150);
+}
+
+th {
+    background-color: rgb(28, 156, 150);
+    color: white;
+}
+
+.combinaResultado td{
+    background-color: rgb(189, 236, 234);
+}
+
+.invisivel {
+    display: none;
+}
